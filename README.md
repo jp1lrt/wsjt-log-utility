@@ -1,4 +1,4 @@
-WSJT Log Utility v0.1
+WSJT Log Utility v0.11
 =====================
 
 LoTW-friendly log recovery and ADIF splitting utility.
