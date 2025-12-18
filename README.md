@@ -68,3 +68,66 @@ This tool was developed collaboratively by the author and ChatGPT.
 WSJT Log Utility is free software.
 It may be redistributed freely, with or without modification.
 No warranty is provided.
+
+WSJT Log Utility v0.11
+=====================
+
+LoTW 対応ログ復旧・ADIF 分割ユーティリティ
+
+通常、交信データは wsjtx_log.adi に保存されています。
+しかし、PCトラブルやディスク障害、OS再インストール等により
+wsjtx_log.adi が失われ、wsjtx.log だけが残る場合があります。
+
+WSJT Log Utility はそのような状況を想定し、wsjtx.log に残っている
+情報を元に交信記録を ADIF として再構築し、LoTW へアップロード
+できるようにするためのツールです。
+
+また、wsjtx_log.adi（ADIF）が残っている場合でも、同一PCで複数の
+グリッド・ロケーターから運用していたケースでは、日時を基準に
+ADIF を分割してから、それぞれを正しい Station Location で TQSL
+署名・アップロードする必要があります。本ツールはその分割にも対応します。
+
+使い方
+------
+1) wsjt_log_utility.py（またはビルド済み EXE）を起動します
+2) 入力ファイルを選択します
+   - wsjtx.log      （CSV形式のテキスト）
+   - wsjtx_log.adi  （ADIF）
+3) 抽出したい期間の開始・終了日時（UTC）を入力します
+   形式：YYYY-MM-DD HH:MM:SS
+4) （任意）ファイル名用のメタ情報（グリッド、/P、POTA、SOTA等）を入力します
+5) 「Convert / Split」を押します
+6) 指定したフォルダに ADIF が作成されます
+
+LoTW へのアップロードについて
+----------------------------
+- TQSL を起動します
+- 作成された ADIF ファイルを署名・アップロードします
+- 正しい Station Location（自局グリッド）を選択してください
+
+重要：
+本ツールは ADIF に自局のグリッド・ロケーターを「書き込みません」。
+LoTW では Station Location によって自局情報（グリッド）を管理するため、
+この設計は意図的なものです。
+
+注意事項・制限
+--------------
+- 日時はすべて UTC として扱われます
+- wsjtx.log には自局グリッド情報は含まれていません
+- 複数グリッド運用の場合、オペレーター自身が日時を基準に分割する必要があります
+- 本ツールはグリッドを自動推測することはありません
+- LoTW 互換性と安全性を最優先に設計されています
+
+------------------------------------------------------------
+作者およびライセンス
+------------------------------------------------------------
+
+作者：
+Yoshiharu（JP1LRT）
+
+本ツールは作者と ChatGPT による共同検討・設計をもとに開発されました。
+
+WSJT Log Utility は完全にフリーなソフトウェアです。
+改変・再配布は自由に行えます。
+本ソフトウェアは無保証です。
+
