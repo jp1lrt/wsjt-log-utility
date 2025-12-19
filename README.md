@@ -8,6 +8,9 @@ Have you ever lost `wsjtx_log.adi` after a PC crash or reinstall?
 WSJT Log Utility helps you recover QSOs from `wsjtx.log`,
 split ADIF files by date/time, and prepare clean uploads for LoTW.
 
+While the tool is commonly used with FT8 / FT4 logs, the ADIF splitting
+function itself is mode-agnostic and can also be used to split ADIF files
+generated from CW, SSB, or mixed-mode operations when preparing uploads.
 
 Normally, QSOs are already saved in wsjtx_log.adi.
 However, in cases where wsjtx_log.adi has been lost (e.g. system failure,
