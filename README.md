@@ -1,7 +1,12 @@
 # WSJT Log Utility v0.13
 =====================
 
-LoTW-friendly log recovery and ADIF splitting utility.
+A small Windows GUI tool for WSJT-X / JTDX users.
+
+Have you ever lost `wsjtx_log.adi` after a PC crash or reinstall?
+WSJT Log Utility helps you recover QSOs from `wsjtx.log`,
+split ADIF files by date/time, and prepare clean uploads for LoTW.
+
 
 Normally, QSOs are already saved in wsjtx_log.adi.
 However, in cases where wsjtx_log.adi has been lost (e.g. system failure,
@@ -13,6 +18,12 @@ an existing wsjtx_log.adi (or any ADIF file) by date/time range so that
 multiple operating locations (multiple grids) can be uploaded correctly
 using TQSL Station Locations.
 
+Get the latest release here:
+https://github.com/jp1lrt/wsjt-log-utility/releases
+
+Recommended for most users:
+- `wsjt_log_utility.exe` (single EXE, no installation required)
+
 Typical use cases
 -----------------
 - wsjtx_log.adi was lost, but wsjtx.log still exists
@@ -20,13 +31,6 @@ Typical use cases
 - QSOs need to be split by date/time for correct Station Location
 - Historical logs need partial recovery (e.g. 6m or selected periods)
 - Portable / special operations where you want clear output filenames
-
-## New in v0.13
-
-- Band filter support (HF / VHF / UHF up to 23cm)
-- Convert or split logs for a specific band only
-- Useful for VHF/UHF, microwave, or contest log management
-- Band detection based on frequency (MHz)
 
 How to use
 ----------
@@ -39,6 +43,13 @@ How to use
 5. (Optional) Fill filename metadata (grid, /P, POTA, SOTA, etc.)
 6. Click "Convert / Split"
 7) An ADIF file will be created in the selected output folder
+
+## New in v0.13
+
+- Band filter support (HF / VHF / UHF up to 23cm)
+- Convert or split logs for a specific band only
+- Useful for VHF/UHF, microwave, or contest log management
+- Band detection based on frequency (MHz)
 
 Uploading to LoTW
 -----------------
@@ -77,6 +88,9 @@ WSJT Log Utility is free software.
 It may be redistributed freely, with or without modification.
 No warranty is provided.
 
+---
+
+## 日本語説明 / Japanese description
 WSJT Log Utility v0.13
 =====================
 LoTW 対応ログ復旧・ADIF 分割ユーティリティ
