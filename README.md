@@ -2,7 +2,8 @@
 
 <img width="822" height="652" alt="WSJT Log Utility v0.13 main screen" src="https://github.com/user-attachments/assets/bd43a497-0b23-4a6c-b959-f1476fcc7760" />
 
-A small Windows GUI tool for WSJT-X / JTDX users.
+A small Windows GUI tool primarily for WSJT-X / JTDX users, designed to help prepare and split ADIF logs for correct electronic uploads.
+Although often used with digital mode logs, the utility itself is not limited to any specific operating mode.
 
 Have you ever lost `wsjtx_log.adi` after a PC crash or reinstall?
 WSJT Log Utility helps you recover QSOs from `wsjtx.log`,
