@@ -18,11 +18,14 @@ an existing wsjtx_log.adi (or any ADIF file) by date/time range so that
 multiple operating locations (multiple grids) can be uploaded correctly
 using TQSL Station Locations.
 
+## Download
+
 Get the latest release here:
 https://github.com/jp1lrt/wsjt-log-utility/releases
 
 Recommended for most users:
 - `wsjt_log_utility.exe` (single EXE, no installation required)
+
 
 Typical use cases
 -----------------
