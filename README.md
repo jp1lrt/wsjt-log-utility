@@ -1,5 +1,6 @@
 # WSJT Log Utility v0.13
-=====================
+
+<img width="822" height="652" alt="WSJT Log Utility v0.13 main screen" src="https://github.com/user-attachments/assets/bd43a497-0b23-4a6c-b959-f1476fcc7760" />
 
 A small Windows GUI tool for WSJT-X / JTDX users.
 
