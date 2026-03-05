@@ -224,3 +224,34 @@ Author: Yoshiharu (JP1LRT)
 本ツールはフリーソフトウェアです。
 改変の有無にかかわらず再配布可能です。
 本ソフトウェアの使用によって生じたいかなる損害についても、作者は責任を負いません。
+
+---
+
+## Author
+
+**Yoshiharu Tsukuura / 津久浦 慶治**  
+Amateur Radio Station **JP1LRT**  
+https://www.qrz.com/db/JP1LRT
+
+## Donate
+
+If this tool has been useful to you, any support is greatly appreciated ☕
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue)](https://www.paypal.me/jp1lrt)
+[![Coffee](https://img.shields.io/badge/Coffee-%E2%98%95-yellow)](https://www.paypal.me/jp1lrt)
+
+---
+
+## 作者
+
+**津久浦 慶治 / Yoshiharu Tsukuura**  
+アマチュア無線局 **JP1LRT**  
+https://www.qrz.com/db/JP1LRT
+
+## Donate
+
+もしこのツールが役に立ったと感じていただけたら、  
+コーヒー代くらいの感覚で応援していただけると今後の開発の励みになります ☕
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue)](https://www.paypal.me/jp1lrt)
+[![Coffee](https://img.shields.io/badge/Coffee-%E2%98%95-yellow)](https://www.paypal.me/jp1lrt)
