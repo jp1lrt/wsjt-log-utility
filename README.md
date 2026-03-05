@@ -74,7 +74,7 @@ Notes & limitations
 - All times are handled strictly in UTC
 - wsjtx.log does NOT contain your own grid locator
 - If multiple grids were used, logs must be split by date/time based on
-  the operator’s knowledge
+  the operator's knowledge
 - The tool does not guess or infer grid locations
 - Designed for reliability and LoTW compatibility
 
@@ -98,19 +98,33 @@ No warranty is provided.
 
 ---
 
+## Related Tools
+
+If `wsjtx.log` is gone too, and only `ALL.TXT` remains, there is another tool:
+
+| Situation | Tool |
+|---|---|
+| `wsjtx.log` still exists | **WSJT Log Utility** (this tool) |
+| Only `ALL.TXT` remains | [ALLTXT2ADIF](https://github.com/jp1lrt/alltxt2adif) |
+
+Together, these two tools cover most log recovery scenarios.
+Hopefully you'll never need either of them.
+
+---
+
 ## 日本語説明 / Japanese description
 WSJT-X / JTDX ユーザー向けの、Windows 用 GUI ユーティリティです。
 
-PC クラッシュや OS 再インストールなどで  
+PC クラッシュや OS 再インストールなどで
 `wsjtx_log.adi` を失ってしまったことはありませんか？
 
-**WSJT Log Utility** は、`wsjtx.log` から QSO データを復元し、  
-LoTW へ正しくアップロードできる ADIF ファイルを作成するためのツールです。  
-また、日付・時刻で ADIF ファイルを分割することで、  
+**WSJT Log Utility** は、`wsjtx.log` から QSO データを復元し、
+LoTW へ正しくアップロードできる ADIF ファイルを作成するためのツールです。
+また、日付・時刻で ADIF ファイルを分割することで、
 移動運用や複数グリッド運用のログ整理にも対応します。
 
-通常、QSO は `wsjtx_log.adi` に保存されていますが、  
-システム障害・ディスク障害・OS 再インストールなどの状況では  
+通常、QSO は `wsjtx_log.adi` に保存されていますが、
+システム障害・ディスク障害・OS 再インストールなどの状況では
 `wsjtx.log` だけが残るケースがあります。
 
 本ツールは、そのような状況を想定して設計されています。
@@ -119,12 +133,12 @@ LoTW へ正しくアップロードできる ADIF ファイルを作成するた
 
 ## ダウンロード
 
-最新版はこちらから入手できます：  
+最新版はこちらから入手できます：
 https://github.com/jp1lrt/wsjt-log-utility/releases
 
 通常は以下をダウンロードしてください：
 
-- **wsjt_log_utility.exe**  
+- **wsjt_log_utility.exe**
   （単体 EXE ファイル・インストール不要）
 
 ---
@@ -150,8 +164,8 @@ https://github.com/jp1lrt/wsjt-log-utility/releases
 ## 使い方
 
 1. `wsjt_log_utility.exe`（または Python 版）を起動
-2. 入力ファイルを選択  
-   - `wsjtx.log`（CSV 形式テキスト）  
+2. 入力ファイルを選択
+   - `wsjtx.log`（CSV 形式テキスト）
    - `wsjtx_log.adi`（ADIF 形式）
 3. 開始・終了日時（UTC）を入力（YYYY-MM-DD HH:MM:SS）
 4. （任意）バンドフィルターを指定（ALL / 160m ～ 23cm）
@@ -167,8 +181,8 @@ https://github.com/jp1lrt/wsjt-log-utility/releases
 2. 生成された ADIF ファイルを署名・アップロード
 3. TQSL で正しい Station Location（グリッド）を選択
 
-**重要**  
-本ツールは ADIF に自局のグリッドロケーターを書き込みません。  
+**重要**
+本ツールは ADIF に自局のグリッドロケーターを書き込みません。
 必ず TQSL の Station Location を使って正しいグリッドを指定してください。
 
 ---
@@ -189,11 +203,24 @@ https://github.com/jp1lrt/wsjt-log-utility/releases
 
 ---
 
+## 関連ツール
+
+`wsjtx.log` も失われて `ALL.TXT` だけが残っている場合は、こちらのツールをご利用ください：
+
+| 状況 | ツール |
+|---|---|
+| `wsjtx.log` が残っている | **WSJT Log Utility**（このツール） |
+| `ALL.TXT` しか残っていない | [ALLTXT2ADIF](https://github.com/jp1lrt/alltxt2adif) |
+
+2つのツールを合わせることで、ほとんどのログ復旧シナリオに対応できます。
+どちらも「使う機会がないのが一番」ですが。
+
+---
+
 ## 作者・ライセンス
 
 Author: Yoshiharu (JP1LRT)
 
-本ツールはフリーソフトウェアです。  
-改変の有無にかかわらず再配布可能です。  
+本ツールはフリーソフトウェアです。
+改変の有無にかかわらず再配布可能です。
 本ソフトウェアの使用によって生じたいかなる損害についても、作者は責任を負いません。
-
